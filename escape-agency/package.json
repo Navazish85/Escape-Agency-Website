@@ -1,0 +1,52 @@
+{
+  "name": "tem",
+  "version": "0.1.0",
+  "private": true,
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=7.0.0",
+    "yarn": "please use npm instead"
+  },
+  "scripts": {
+    "dev": "cross-env NODE_OPTIONS='--inspect' next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "prettier": "prettier --write .",
+    "prepare": "husky install",
+    "exec": "chmod ug+x .husky/* && chmod ug+x .git/hooks/*",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@chakra-ui/react": "^2.6.1",
+    "@emotion/react": "^11.11.0",
+    "@emotion/styled": "^11.11.0",
+    "@sendgrid/mail": "^7.7.0",
+    "@types/node": "20.2.3",
+    "@types/react": "18.2.6",
+    "@types/react-dom": "18.2.4",
+    "axios": "^1.4.0",
+    "eslint": "8.41.0",
+    "eslint-config-next": "13.4.3",
+    "firebase": "^9.22.0",
+    "framer-motion": "^10.12.12",
+    "husky": "^8.0.2",
+    "next": "13.4.3",
+    "nextjs-progressbar": "^0.0.16",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-hook-form": "^7.43.9",
+    "react-quill": "^2.0.0",
+    "react-slideshow-image": "^4.2.1",
+    "swr": "^2.1.5",
+    "typescript": "5.0.4",
+    "uninstall": "^0.0.0"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.2.0",
+    "@commitlint/config-conventional": "^17.2.0",
+    "@types/nodemailer": "^6.4.8",
+    "cross-env": "^7.0.3",
+    "react-icons": "^4.6.0"
+  }
+}
